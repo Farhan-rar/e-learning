@@ -1,0 +1,22 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+:root
+{
+    --style1: #183883;
+    --style2: #007BB0;
+    --style3: #EBFBFA;
+    --style4: #DB5A5A;
+    --style5: #EFBC36;
+    --style6: #2D2D2D;
+    --style7: #98A0A8;
+    --style8: #D9D9D9;
+    --blue3: #56CCF2;
+    --green3: #6FCF97;
+    --purple2: #BB6BD9;
+}
