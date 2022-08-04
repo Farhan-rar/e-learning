@@ -6,8 +6,8 @@
 
 .cardBox {
     position: relative;
-    width: 95%;
-    padding: 16px;
+    width: 100%;
+    padding: 24px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 30px;
@@ -77,8 +77,8 @@
 
 .details {
     position: relative;
-    width: 95%;
-    padding: 16px;
+    width: 100%;
+    padding: 24px;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 30px;
@@ -132,10 +132,10 @@
 /* Mata Kuliah */
 section.mk {
     position: relative;
-    width: 95%;
-    padding: 16px;
+    width: 100%;
+    padding: 24px;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
 }
 
@@ -204,6 +204,7 @@ section.mk .boxMk .wrapper .card .judul h6 {
     color: var(--style6);
 }
 
+
 section.mk .boxMk .wrapper .card .footer .fotoDosen {
     position: relative;
     width: 24px;
@@ -223,7 +224,21 @@ section.mk .boxMk .wrapper .card .footer .fotoDosen img {
 }
 
 section.mk .card .footer {
+    display: flex;
+    align-items: center;
     margin-top: 10px;
+}
+section.mk .card .footer .progress {
+    width: 106px;
+    height: 8px;
+    margin-left: 12px;
+    background: #9CBAB4;
+}
+
+section.mk .progress__fill {
+    width: 50%;
+    height: 100%;
+    background: var(--style2);
 }
 
 @media (max-width: 991px)
@@ -232,10 +247,8 @@ section.mk .card .footer {
         width: 100%;
         left: 0;
     }
-
     .main.active {
-        width: 290px;
-        left: 0;
+        left: 290px;
     }
     .cardBox {
         grid-template-columns: repeat(2,1fr);
@@ -256,5 +269,9 @@ section.mk .card .footer {
     }
     .details .cardHeader .tanggal, .submissionButton {
         font-size: 9px;
+    }
+
+    .main.active .toggle {
+        color: var(--style1);
     }
 }

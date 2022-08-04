@@ -5,7 +5,6 @@
     left: 290px;
     min-height: 100vh;
     transition: 0.5s;
-    margin-left: 40px;
 }
 
 .main.active
@@ -15,16 +14,25 @@
 }
 
 .topbar {
+    width: 100%;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 19px 100px 19px 0px;
+    padding: 48px;
 }
 
 .topbar .left {
     display: flex;
     justify-content: center;
     align-items: center;   
+}
+
+.topbar a {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--style2);
 }
 
 .topbar .left a {
@@ -80,4 +88,20 @@
     .topbar {
         margin: 25px;
     }
+}
+
+@media (max-width:480px)
+{
+    .toggle {
+        z-index: 1001;
+    }
+
+    .topbar a {
+        font-size: 12px;
+    }
+
+    .topbar {
+        padding: 16px;
+    }
+    
 }

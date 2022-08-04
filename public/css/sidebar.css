@@ -15,7 +15,6 @@ body {
     background: var(--style1);
     transition: 0.5s;
     overflow: hidden;
-    border-top-right-radius: 20px;
 }
 .navigation.active 
 {
@@ -122,12 +121,22 @@ body {
         left: -290px;
     }
     .navigation.active {
+        width: 290px;
         left: 0;
     }
-
 }
 
 @media (max-width:480px)
 {
+    .navigation {
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
 
+    .navigation.active {
+        width: 100%;
+        left: 0;
+    }
+    
 }
