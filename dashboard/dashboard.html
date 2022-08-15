@@ -93,7 +93,7 @@
                 <div class="pertemuanMinggu">
                     <div class="cardHeader">
                         <div class="title">
-                            <img src="../public/img/icon/Gambar_Task.png" alt="Icon Tugas" width="42">
+                            <img src="../public/img/icon/Gambar_Task.png" alt="Icon Tugas">
                             <div class="info">
                                 <div class="tugas"><h4>UAS Grafika</h4></div>
                                 <div class="mk"><h4>Grafika Komputer</h4></div>
@@ -162,10 +162,8 @@
                                     <div class="fotoDosen">
                                         <img src="../public/img/Foto Dosen.png" alt="">
                                     </div>
-                                    <div class="progress">
-                                        <div class="progress__text">50%</div>
-                                        <div class="progress__fill"></div>
-                                    </div>
+                                    <h3>70%</h3>
+                                    <span class="bar"></span>
                                 </div>
                             </div>
                         </div>
@@ -395,29 +393,8 @@
     
 
     <script src="../public/js/calendar.js"></script>
-    <script>
-        
+    <script src="../public/js/menuToggle.js"></script>
 
-        //Menu Toggle
-        let toggle = document.querySelector('.toggle');
-        let navigation = document.querySelector('.navigation');
-        let main = document.querySelector('.main');
-
-        toggle.onclick = function(){
-            navigation.classList.toggle('active');
-            main.classList.toggle('active');
-        }
-
-        //Add Hover Class in li
-        let list = document.querySelectorAll('.navigation li');
-        function activeLink() {
-            list.forEach((item) => 
-            item.classList.remove('hovered'));
-            this.classList.add('hovered');
-        }
-        list.forEach((item) => 
-        item.addEventListener('mouseover',activeLink));
-    </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

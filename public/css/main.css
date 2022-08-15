@@ -1,4 +1,18 @@
 /* Main */
+.main {
+    position: absolute;
+    width: calc(100% - 290px);
+    left: 290px;
+    min-height: 100vh;
+    transition: 0.5s;
+}
+
+.main.active
+{
+    width: calc(100% - 90px);
+    left: 90px;
+}
+
 .overview h1 {
     margin-left: 20px;
     font-size: 24px;
@@ -72,7 +86,6 @@
     margin-top: 24px;
     margin-left: 20px;
     font-size: 24px;
-    margin-bottom: 20px;
 }
 
 .details {
@@ -94,6 +107,9 @@
     box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
     margin-bottom: 10px;
+}
+.details .cardHeader img {
+    width: 42px;
 }
 .details .cardHeader .title {
     display: flex;
@@ -225,20 +241,14 @@ section.mk .boxMk .wrapper .card .footer .fotoDosen img {
 
 section.mk .card .footer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 10px;
 }
-section.mk .card .footer .progress {
-    width: 106px;
-    height: 8px;
-    margin-left: 12px;
-    background: #9CBAB4;
-}
 
-section.mk .progress__fill {
-    width: 50%;
-    height: 100%;
-    background: var(--style2);
+.bar {
+    background: #e5e5e5;
+    display: block;
+    height: 4px;
 }
 
 @media (max-width: 991px)
@@ -263,15 +273,31 @@ section.mk .progress__fill {
     .cardBox {
         grid-template-columns: repeat(1,1fr);
     }
-
+    .details .cardHeader img {
+        width: 24px;
+    }
     section.mk .boxMk .wrapper {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
     }
     .details .cardHeader .tanggal, .submissionButton {
-        font-size: 9px;
+        font-size: 8px;
     }
 
     .main.active .toggle {
         color: var(--style1);
+    }
+    .details .cardHeader .title .info {
+        margin-left: 8px;
+    }
+    .details .cardHeader .title .tugas {
+        font-size: 10px;
+    }
+    .details .cardHeader .title .mk {
+        font-size: 8px;
+    }
+    .details .cardHeader .submissionButton {
+        padding: 8px 14px;
+        background-color: var(--style2);
+        border-radius: 5px;
     }
 }
