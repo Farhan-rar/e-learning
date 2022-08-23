@@ -205,3 +205,45 @@ section.mk .card .footer {
     align-items: flex-start;
     margin-top: 10px;
 }
+
+@media (max-width: 991px)
+{
+    .main {
+        width: 100%;
+        left: 0;
+    }
+    .main.active {
+        left: 290px;
+    }
+    .cardBox {
+        grid-template-columns: repeat(2,1fr);
+    }
+    section.mk {
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    section.mk .boxMk .wrapper {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 480px)
+{
+    .main.active .toggle {
+        color: var(--style1);
+    }
+    .details .cardHeader .title .info {
+        margin-left: 8px;
+    }
+    .details .cardHeader .title .tugas {
+        font-size: 10px;
+    }
+    .details .cardHeader .title .mk {
+        font-size: 8px;
+    }
+    .details .cardHeader .submissionButton {
+        padding: 8px 14px;
+        background-color: var(--style2);
+        border-radius: 5px;
+    }
+}
